@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+.First-Page{
+    height: 100vh;
+    background-image:url("yellow-watercolor-paper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 400%;
+}
+.second-page{
+    height: 100vh;
+    background-color: #FEB81C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+a:hover{
+    color: rgb(158, 158, 158);
+    text-decoration: underline;
+}
+.second-page div:first-child{
+    width: 50%;
+}
+img{
+    border-radius: 50%;
+}
+.second-page div:second-child{
+    width: 50%;
+}
+h2{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+    font-size: 250%;
+}
+p{
+    text-transform: capitalize;
+    font-weight: 400px;
+    color: black;
+}
+@media only screen and (max-width: 768px) {
+    .second-page{
+        flex-direction: column;
+    }
+    img{
+        height: 50%;
+    }
+    .second-page div:second-child{
+        align-items: flex-start;
+    }
+}
