@@ -1,0 +1,85 @@
+/* fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
+
+/* reset */
+
+*{
+    padding: 0px;
+    margin:0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* first page */
+
+.First-Page{
+    height: 100vh;
+    background-image:url("yellow-watercolor-paper.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.First-Page h1:first-child{
+   
+    color: whitesmoke;
+    font-weight: bold;
+    font-size: 400%;
+}
+/* a{
+    color: white;
+    text-decoration: none;
+    text-transform: capitalize;
+    
+    align-self: flex-end;
+}
+a:hover{
+    color: rgb(158, 158, 158);
+    text-decoration: underline;
+} */
+
+/* second page */
+
+.second-page{
+    height: 100vh;
+    background-color: #FEB81C;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.second-page img:first-child{
+    border-radius: 50%;
+    height: 350px;
+    
+}
+
+.second-page h2:first-child{
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: white;
+    font-size: 250%;
+}
+.second-page p:last-child{
+    text-transform: capitalize;
+    font-weight: 400px;
+    color: black;
+}
+
+
+
+/* media queries */
+@media only screen and (max-width: 768px) {
+    .second-page{
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+    .second-page h2:first-child{
+        text-align: center;
+    }
+
+}
